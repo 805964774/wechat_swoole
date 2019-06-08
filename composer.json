@@ -21,15 +21,5 @@
         "files": [
             "helper/helper.php"
         ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "echo '[WARNING] Delete vendor all git dirs'",
-            "rm -rf vendor/jinlulu/wechat_swoole/.git"
-        ],
-        "post-update-cmd": [
-            "echo '[WARNING] Delete vendor all git dirs'",
-            "rm -rf vvendor/jinlulu/wechat_swoole/.git"
-        ]
     }
 }
