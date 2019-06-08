@@ -1,0 +1,35 @@
+{
+    "name": "jinlulu/wechat_swoole",
+    "description": "微信相关代码，包括微信分享，微信授权登录，小程序授权登录等",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "靳陆陆",
+            "email": "805964774@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "overtrue/wechat": "~4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jinlulu\\WechatSwoole\\": "src/",
+            "Jinlulu\\WechatSwoole\\Lib\\": "lib/"
+        },
+        "files": [
+            "helper/helper.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo '[WARNING] Delete vendor all git dirs'",
+            "rm -rf vendor/jinlulu/wechat_swoole/.git"
+        ],
+        "post-update-cmd": [
+            "echo '[WARNING] Delete vendor all git dirs'",
+            "rm -rf vvendor/jinlulu/wechat_swoole/.git"
+        ]
+    }
+}
